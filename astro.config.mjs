@@ -1,8 +1,5 @@
-import { defineConfig } from "astro/config";
-import githubPages from "@astrojs/github-pages";
+import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: "https://ianparkerjenkins.github.io",
-  base: "/",
-  integrations: [githubPages()],
-});
+  site: 'https://ianparkerjenkins.github.io',
+})
