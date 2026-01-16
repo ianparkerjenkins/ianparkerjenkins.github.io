@@ -1,31 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import About from '../components/About.astro';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
-<Layout title="Ian Jenkins">
-  <h1>Ian Jenkins</h1>
 
-  <p style="color:var(--muted); font-size:1.1rem;">
-    Senior Software Engineer working at the intersection of
-    scientific computing, automation, and applied machine learning.
-  </p>
-
-  <p>
-    I design and build software systems for complex, real-world
-    problems — particularly where correctness, performance, and
-    long-term maintainability matter.
-  </p>
-
-  <p>
-    My background includes quantum control software, data pipelines,
-    and building tools that help people reason about uncertainty,
-    tradeoffs, and long-term outcomes.
-  </p>
-
-  <h2>How I work</h2>
-  <ul>
-    <li>I prefer simple, well-reasoned systems over clever ones.</li>
-    <li>I optimize for clarity, reliability, and leverage.</li>
-    <li>I enjoy working close to both theory and real constraints.</li>
-  </ul>
-
+<Layout>
+	<About/>
 </Layout>
