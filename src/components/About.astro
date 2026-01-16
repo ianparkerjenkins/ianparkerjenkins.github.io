@@ -1,10 +1,17 @@
-<div>
-  <h1>Ian Jenkins</h1>
+---
+import profile from '../assets/profile.png';
+---
 
-  <p style="color:var(--muted); font-size:1.1rem;">
-    Senior Software Engineer working at the intersection of
-    scientific computing, automation, and applied machine learning.
-  </p>
+<div>
+    <div class="bio-section">
+    <img src={profile.src} alt="Ian Jenkins" />
+    <div class="bio-text">
+        <h1>Ian Jenkins</h1>
+        <p class="muted" style="font-size:1.1rem;">
+        Senior Software Engineer working at the intersection of scientific computing, automation, and applied machine learning.
+        </p>
+    </div>
+    </div>
 
   <p>
     I design and build software systems for complex, real-world
@@ -25,31 +32,56 @@
     <li>I enjoy working close to both theory and real constraints.</li>
   </ul>
 
+  <h2>Elsewhere</h2>
+  <ul>
+    <li><a href="https://github.com/ianparkerjenkins">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/ipj">LinkedIn</a></li>
+  </ul>
+
 </div>
 
 
 
 <style>
-/* ---------- Design tokens ---------- */
-:root {
-  --bg: #ffffff;
-  --surface: #f8fafc;
-  --text: #0f172a;
-  --muted: #475569;
-  --accent: #2563eb;
-  --border: #e2e8f0;
 
+.bio-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bio-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.bio-section .bio-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ---------- Light theme ---------- */
+:root {
+  --bg: #1c1e23;
+  --surface: #252f40;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --accent: #60a5fa;
+  --border: #334155;
   --content-width: 720px;
 }
 
+
 /* ---------- Base ---------- */
 html {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
@@ -138,4 +170,13 @@ strong {
   font-weight: 600;
 }
 
+/* ---------- Bio / Profile image ---------- */
+.bio-section img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 </style>
