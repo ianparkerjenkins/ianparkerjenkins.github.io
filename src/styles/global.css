@@ -1,90 +1,94 @@
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
 
-	h1 {
-		font-family: "Poiret One", sans-serif;
-		font-weight: 400;
-		font-style: normal;
-	}
+h1 {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 1.2rem;
-		padding: 2rem;
-	}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.2rem;
+    padding: 2rem;
+}
 
-	.card.tall {
-		grid-row: span 2;
-		aspect-ratio: auto; 
-	}
+.card.tall {
+    grid-row: span 2;
+    aspect-ratio: auto; 
+}
 
-	.card.wide {
-		grid-column: span 2;
-		aspect-ratio: auto;
-	}
+.card.wide {
+    grid-column: span 2;
+    aspect-ratio: auto;
+}
 
-	.card.intro {
-		background: #ffffff;
-		grid-column: span 2;
-		aspect-ratio: auto;
-	}
+.card.intro {
+    background: #ffffff;
+    grid-column: span 2;
+    aspect-ratio: auto;
+}
 
-	/* .card.big {
-		background: #ffffff;
-		grid-column: span 2;
-		grid-row: span 2;
-		aspect-ratio: auto;
-	} */
+/* .card.big {
+    background: #ffffff;
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: auto;
+} */
 
-	@media (max-width: 640px) {
-		.card.tall,
-		.card.wide,
-		.card.big {
-			grid-column: span 1;
-			grid-row: span 1;
-			aspect-ratio: 1 / 1;
-		}
-	}
+@media (max-width: 640px) {
+    .card.tall,
+    .card.wide,
+    .card.big {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 1 / 1;
+    }
+}
 
-	.card {
-		background: #ededed;
-		position: relative;       
-		overflow: hidden;         
-		border-radius: 12px;
-		cursor: pointer;
-		font-size: 1.25rem;
-		aspect-ratio: 1 / 1;      
-	}
+.card {
+    background: #ededed;
+    position: relative;       
+    overflow: hidden;         
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    aspect-ratio: 1 / 1;      
+}
 
-	.card img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;       
-		display: block;
-		transition: transform 0.3s ease;
-	}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    display: block;
+    transition: transform 0.3s ease;
+}
 
-	.card:hover img {
-		transform: scale(1.05);
-	}
+.card:hover img {
+    transform: scale(1.05);
+}
 
-	.card-text {
-		position: absolute;
-		bottom: 0;              
-		left: 0;
-		right: 0;
-		padding: 1rem;
-		color: rgb(255, 255, 255);
-		background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-		opacity: 0.2;
-		transition: opacity 0.3s ease;
-	}
+.card-text {
+    position: absolute;
+    bottom: 0;              
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
 
-	.card:hover .card-text {
-		opacity: 1;
-	}
+.card:hover .card-text {
+    opacity: 1;
+}
