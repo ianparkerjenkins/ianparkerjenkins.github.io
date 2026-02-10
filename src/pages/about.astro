@@ -3,51 +3,74 @@ import profile from '../assets/profile.png';
 import Layout from '../layouts/Layout.astro';
 ---
 
-
 <Layout>
-<div>
+  <div>
     <div class="bio-section">
       <img src={profile.src} alt="Ian Jenkins" />
       <div class="bio-text">
-          <h1>Ian Jenkins</h1>
-          <p class="muted" style="font-size:1.1rem;">
-          Senior Software Engineer working at the intersection of scientific computing, automation, and applied machine learning.
-          </p>
+        <h1>Ian Jenkins</h1>
+        <p class="muted" style="font-size:1.1rem;">
+          Senior Machine Learning &amp; Scientific Software Engineer building
+          production systems at the intersection of automation, scientific
+          computing, and applied ML.
+        </p>
       </div>
     </div>
 
-  <p>
-    I design and build software systems for complex, real-world
-    problems where correctness, performance, and
-    long-term maintainability matter.
-  </p>
+    <p>
+      I design and ship production software for complex, real-world systems where
+      correctness, performance, and long-term maintainability are non-negotiable.
+      My work lives at the boundary between theory and messy reality — turning
+      research ideas into reliable tools people use every day.
+    </p>
 
-  <p>
-    My background includes quantum control software, data pipelines,
-    and building tools that help people reason about uncertainty,
-    tradeoffs, and long-term outcomes.
-  </p>
+    <p>
+      Over the past 7+ years, I’ve led and architected ML-driven automation
+      platforms, real-time data pipelines, and scientific control software at
+      scale. This includes continual-learning computer vision systems,
+      high-throughput experimental automation, and end-to-end ML infrastructure
+      supporting millions of datapoints across heterogeneous hardware systems.
+    </p>
 
-  <h2>How I work</h2>
-  <ul>
-    <li>I prefer simple, well-reasoned systems over clever ones.</li>
-    <li>I optimize for clarity, reliability, and leverage.</li>
-    <li>I enjoy working close to both theory and real constraints.</li>
-  </ul>
+    <h2>What I’ve built</h2>
+    <ul>
+      <li>
+        ML-driven automation platforms that increased experimental throughput by
+        an order of magnitude and enabled non-experts to outperform domain
+        specialists.
+      </li>
+      <li>
+        Production computer vision systems (object detection, keypoints,
+        segmentation) with rapid retraining cycles, A/B testing, and measured
+        impact in deployment.
+      </li>
+      <li>
+        Real-time data pipelines and control software generating tens of millions
+        of scientific datasets across distributed and heterogeneous systems.
+      </li>
+      <li>
+        Scientist-facing tools and GUIs for debugging, visualization, and
+        large-scale data annotation.
+      </li>
+    </ul>
 
-  <h2>Elsewhere</h2>
-  <ul>
-    <li><a href="https://github.com/ianparkerjenkins">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/ipj">LinkedIn</a></li>
-  </ul>
+    <h2>How I work</h2>
+    <ul>
+      <li>I prefer simple, well-reasoned systems that scale over clever one-offs.</li>
+      <li>I optimize for clarity, observability, and leverage over short-term wins.</li>
+      <li>I care deeply about measurement: testing, metrics, and feedback loops.</li>
+      <li>I enjoy working close to both theory and real operational constraints.</li>
+    </ul>
 
-</div>
+    <p class="muted">
+      My work has resulted in peer-reviewed publications and a granted U.S.
+      patent, and has been deployed in production scientific environments for
+      years.
+    </p>
+  </div>
 </Layout>
 
-
-
 <style>
-
 .bio-section {
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +93,6 @@ import Layout from '../layouts/Layout.astro';
   min-width: 200px;
 }
 
-
 :root {
   --bg: #dcdcdc;
   --surface: #252f40;
@@ -80,7 +102,6 @@ import Layout from '../layouts/Layout.astro';
   --border: #334155;
   --content-width: 720px;
 }
-
 
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -164,14 +185,5 @@ section {
 
 strong {
   font-weight: 600;
-}
-
-.bio-section img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--accent);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 </style>
