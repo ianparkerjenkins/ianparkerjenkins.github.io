@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <div>
+  <div class="main">
     <div class="bio-section">
       <img src={profile.src} alt="Ian Jenkins" />
       <div class="bio-text">
@@ -20,19 +20,19 @@ import Layout from '../layouts/Layout.astro';
     <p>
       I design and ship production software for complex, real-world systems where
       correctness, performance, and long-term maintainability are non-negotiable.
-      My work lives at the boundary between theory and messy reality — turning
+      My work lives at the boundary between theory and messy reality; turning
       research ideas into reliable tools people use every day.
     </p>
 
     <p>
-      Over the past 7+ years, I’ve led and architected ML-driven automation
+      Over the past 8 years, I've led and architected ML-driven automation
       platforms, real-time data pipelines, and scientific control software at
       scale. This includes continual-learning computer vision systems,
       high-throughput experimental automation, and end-to-end ML infrastructure
       supporting millions of datapoints across heterogeneous hardware systems.
     </p>
 
-    <h2>What I’ve built</h2>
+    <h2>What I've built</h2>
     <ul>
       <li>
         ML-driven automation platforms that increased experimental throughput by
@@ -63,8 +63,8 @@ import Layout from '../layouts/Layout.astro';
     </ul>
 
     <p class="muted">
-      My work has resulted in peer-reviewed publications and a granted U.S.
-      patent, and has been deployed in production scientific environments for
+      My work has resulted in peer-reviewed publications granted U.S.
+      patents, and has been deployed in production scientific environments for
       years.
     </p>
   </div>
@@ -101,6 +101,10 @@ import Layout from '../layouts/Layout.astro';
   --accent: #4085da;
   --border: #334155;
   --content-width: 720px;
+}
+
+.main {
+  padding: 1.5rem;
 }
 
 html {
@@ -147,15 +151,6 @@ li {
   margin: 0.5rem 0;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 .muted {
   color: var(--muted);
 }
@@ -163,20 +158,6 @@ a:hover {
 header {
   border-bottom: 1px solid var(--border);
   background: var(--bg);
-}
-
-nav {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 1.25rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  font-weight: 500;
-  margin-left: 1rem;
 }
 
 section {
